@@ -1,0 +1,106 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: spdrop_postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-spdrop_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-spdrop_password}
+      POSTGRES_DB: ${POSTGRES_DB:-spdrop_db}
+    expose:
+      - "5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-spdrop_user} -d ${POSTGRES_DB:-spdrop_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - spdrop_network
+
+  whatsapp:
+    image: paulo003/spdrop-whatsapp:v1.1
+    container_name: spdrop_whatsapp
+    expose:
+      - "3000"
+    environment:
+      - PORT=3000
+      - WEBHOOK_URL=http://bot:5000/webhook
+      - NODE_ENV=production
+    volumes:
+      - whatsapp_auth:/app/wwebjs_auth
+    shm_size: '2gb'
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - seccomp:unconfined
+    restart: unless-stopped
+    networks:
+      - spdrop_network
+
+  bot:
+    image: paulo003/spdrop-bot:v1.1
+    container_name: spdrop_bot
+    expose:
+      - "5000"
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-spdrop_user}:${POSTGRES_PASSWORD:-spdrop_password}@postgres:5432/${POSTGRES_DB:-spdrop_db}
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=${POSTGRES_DB:-spdrop_db}
+      - DB_USER=${POSTGRES_USER:-spdrop_user}
+      - DB_PASSWORD=${POSTGRES_PASSWORD:-spdrop_password}
+      - WHATSAPP_API_URL=http://whatsapp:3000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      whatsapp:
+        condition: service_started
+    restart: unless-stopped
+    networks:
+      - spdrop_network
+
+  api:
+    image: paulo003/spdrop-api:v1.1
+    container_name: spdrop_api
+    expose:
+      - "8000"
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=${POSTGRES_DB:-spdrop_db}
+      - DB_USER=${POSTGRES_USER:-spdrop_user}
+      - DB_PASSWORD=${POSTGRES_PASSWORD:-spdrop_password}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-sua-chave-secreta-super-segura-aqui-trocar-em-producao}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - spdrop_network
+
+  nginx:
+    image: paulo003/spdrop-nginx:v1.1
+    container_name: spdrop_nginx
+    ports:
+      - "80:80"
+      # - "443:443"  # Descomente para HTTPS
+    depends_on:
+      - api
+      - whatsapp
+    restart: unless-stopped
+    networks:
+      - spdrop_network
+
+volumes:
+  postgres_data:
+  whatsapp_auth:
+
+networks:
+  spdrop_network:
+    driver: bridge

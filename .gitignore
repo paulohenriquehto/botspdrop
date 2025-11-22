@@ -1,0 +1,164 @@
+# ============================================
+# ARQUIVOS SENSÍVEIS - NUNCA COMMITAR!
+# ============================================
+
+# Arquivos de ambiente com credenciais
+.env
+.env.local
+.env.production
+.env.*.local
+
+# IMPORTANTE: Manter apenas os exemplos
+# .env.example (OK para commitar)
+# .env.external-db (OK para commitar)
+
+# ============================================
+# BANCO DE DADOS
+# ============================================
+*.sql.backup
+*.dump
+db/data/
+postgres_data/
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# WHATSAPP
+# ============================================
+wwebjs_auth/
+.wwebjs_cache/
+.wwebjs_auth/
+session.json
+*.data.json
+
+# ============================================
+# PYTHON
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================
+# NODE.JS
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# ============================================
+# DOCKER
+# ============================================
+docker-compose.override.yml
+*.tar
+*.tar.gz
+
+# Não ignorar docker-compose.yml e docker-compose.prod.yml
+!docker-compose.yml
+!docker-compose.prod.yml
+!docker-compose.external-db.yml
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+
+# ============================================
+# SISTEMA OPERACIONAL
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# CERTIFICADOS E CHAVES
+# ============================================
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+ssl/
+
+# ============================================
+# BACKUPS
+# ============================================
+*.backup
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================================
+# TEMPORÁRIOS
+# ============================================
+tmp/
+temp/
+*.tmp
+.cache/
+
+# ============================================
+# ARQUIVOS PESSOAIS DE DESENVOLVIMENTO
+# ============================================
+TODO.md
+NOTES.md
+scratch.py
+test_*.py
+debug_*.py

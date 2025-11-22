@@ -1,0 +1,8 @@
+- Cada agente tem um seu arquivo próprio.
+- Sempre que não souber de algo, pesquise na internet.
+- Vamos criar agente de inteligência artificial com Python.
+- Vamos utilizar o chat gpt 4.1 mini e sempre lembrar do .env
+- cada tool tem seu próprio arquivo
+- Não precisa gerar arquivos .md ou apresentar texto ao fim de uma tarefa, apenas... fale, eu terminei.
+- Quando um usuário te solicitar a criação de um agente, crie apenas o agente. Não crie nenhum tools  ou qualquer outra coisa além do que foi solicitado.
+- Sempre siga risca o que o usuário de solicitar. Se ele apenas solicitar a criação de um tools, crie. Se ele te solicitar, crie um novo agente, apenas faça.

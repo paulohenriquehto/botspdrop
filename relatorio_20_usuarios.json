@@ -1,0 +1,188 @@
+{
+  "data": "2025-11-20T11:45:51.723991",
+  "total_usuarios": 20,
+  "total_fechamentos": 8,
+  "taxa_conversao": 40.0,
+  "resultados": [
+    {
+      "id": 1,
+      "nome": "Juliana Silva",
+      "perfil": "Mãe Iniciante",
+      "nivel": "Iniciante total - nunca vendeu online",
+      "total_mensagens": 10,
+      "fechou": false,
+      "motivo": "Objeção não resolvida - cliente adiou"
+    },
+    {
+      "id": 2,
+      "nome": "Carlos Eduardo",
+      "perfil": "CLT buscando renda extra",
+      "nivel": "Iniciante - conhece Mercado Livre como comprador",
+      "total_mensagens": 10,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 3,
+      "nome": "Rafaela Costa",
+      "perfil": "Estudante de 19 anos",
+      "nivel": "Iniciante mas conhece redes sociais",
+      "total_mensagens": 10,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 4,
+      "nome": "Roberto Almeida",
+      "perfil": "Ex-lojista físico",
+      "nivel": "Médio - entende de vendas mas não de online",
+      "total_mensagens": 14,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 5,
+      "nome": "Patrícia Mendes",
+      "perfil": "Revendedora de cosméticos",
+      "nivel": "Médio - vende mas quer automatizar",
+      "total_mensagens": 13,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 6,
+      "nome": "Thiago Santos",
+      "perfil": "Influencer pequeno (5k seguidores)",
+      "nivel": "Médio - conhece marketing digital",
+      "total_mensagens": 11,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 7,
+      "nome": "Fernando Ribeiro",
+      "perfil": "Já vendeu em marketplace",
+      "nivel": "Avançado - conhece operação de e-commerce",
+      "total_mensagens": 13,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 8,
+      "nome": "Amanda Oliveira",
+      "perfil": "Empreendedora serial",
+      "nivel": "Avançado - conhece o mercado",
+      "total_mensagens": 13,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 9,
+      "nome": "Paulo Henrique",
+      "perfil": "Cético e desconfiado",
+      "nivel": "Médio mas desconfiado",
+      "total_mensagens": 12,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 10,
+      "nome": "Mariana Souza",
+      "perfil": "Sem dinheiro disponível",
+      "nivel": "Iniciante com restrição financeira",
+      "total_mensagens": 11,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 11,
+      "nome": "Gabriela Lima",
+      "perfil": "Mãe de 3 filhos",
+      "nivel": "Iniciante",
+      "total_mensagens": 13,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 12,
+      "nome": "Lucas Martins",
+      "perfil": "Adolescente de 17 anos",
+      "nivel": "Iniciante - muito jovem",
+      "total_mensagens": 13,
+      "fechou": false,
+      "motivo": "Cliente encerrou sem fechar"
+    },
+    {
+      "id": 13,
+      "nome": "Sandra Regina",
+      "perfil": "Aposentada que quer se manter ativa",
+      "nivel": "Iniciante - pouca familiaridade com tecnologia",
+      "total_mensagens": 13,
+      "fechou": false,
+      "motivo": "Direcionou para suporte (possível assinante)"
+    },
+    {
+      "id": 14,
+      "nome": "Diego Ferreira",
+      "perfil": "Comparador de preços",
+      "nivel": "Médio",
+      "total_mensagens": 13,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 15,
+      "nome": "Beatriz Alves",
+      "perfil": "Professora querendo renda passiva",
+      "nivel": "Iniciante",
+      "total_mensagens": 13,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 16,
+      "nome": "Ricardo Souza",
+      "perfil": "Motorista de Uber",
+      "nivel": "Iniciante",
+      "total_mensagens": 12,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 17,
+      "nome": "Camila Torres",
+      "perfil": "Influencer fitness (15k seguidores)",
+      "nivel": "Médio - conhece marketing",
+      "total_mensagens": 12,
+      "fechou": true,
+      "motivo": "Enviou link de pagamento"
+    },
+    {
+      "id": 18,
+      "nome": "José Carlos",
+      "perfil": "Comerciante tradicional resistente",
+      "nivel": "Iniciante - resistente à tecnologia",
+      "total_mensagens": 14,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 19,
+      "nome": "Larissa Mendes",
+      "perfil": "Estudante de marketing",
+      "nivel": "Médio - estudando o tema",
+      "total_mensagens": 14,
+      "fechou": false,
+      "motivo": "Em andamento"
+    },
+    {
+      "id": 20,
+      "nome": "Anderson Lima",
+      "perfil": "Desempregado desesperado",
+      "nivel": "Iniciante - situação urgente",
+      "total_mensagens": 14,
+      "fechou": false,
+      "motivo": "Em andamento"
+    }
+  ]
+}

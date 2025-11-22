@@ -1,0 +1,33 @@
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.env
+.git
+.gitignore
+*.md
+.DS_Store
+.vscode
+.idea
+*.log
+teste_*.py
+test_*.py
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+WhatsApp Image*
+Captura de tela*
+.playwright-mcp/
+frontend/
+whatsapp-service/
+docs/
+node_modules/

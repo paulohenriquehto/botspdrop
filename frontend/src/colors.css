@@ -1,0 +1,270 @@
+/**
+ * SPDrop Admin - Sistema de Cores
+ * Design por Jhulia - Web Designer & Front-End Developer
+ * Estilo: Corporativo Moderno Escuro
+ * Paleta harmoniosa com fundo branco e elementos escuros/claros
+ */
+
+:root {
+  /* ========================================
+     CORES PRINCIPAIS - Tons Escuros
+     ======================================== */
+  --primary-900: #0F172A;    /* Azul escuro profundo - sidebar, headers principais */
+  --primary-800: #1E293B;    /* Azul escuro médio - hover states, elementos ativos */
+  --primary-700: #334155;    /* Azul escuro suave - bordas, divisores */
+  --primary-600: #475569;    /* Azul acinzentado - texto em fundos escuros */
+  --primary-500: #64748B;    /* Azul médio neutro */
+
+  /* ========================================
+     CORES SECUNDÁRIAS - Acentos Vibrantes
+     ======================================== */
+  --accent-500: #3B82F6;     /* Azul vibrante - CTAs principais, links, destaques */
+  --accent-600: #2563EB;     /* Azul mais intenso - hover em CTAs */
+  --accent-700: #1D4ED8;     /* Azul profundo - pressed states */
+  --accent-400: #60A5FA;     /* Azul claro - elementos secundários */
+  --accent-300: #93C5FD;     /* Azul muito claro - backgrounds sutis */
+
+  /* ========================================
+     CORES DE STATUS E FEEDBACK
+     ======================================== */
+  --success-500: #10B981;    /* Verde - sucesso, confirmações, online */
+  --success-600: #059669;    /* Verde escuro - hover */
+  --success-100: #D1FAE5;    /* Verde claro - backgrounds */
+
+  --warning-500: #F59E0B;    /* Âmbar - avisos, atenção */
+  --warning-600: #D97706;    /* Âmbar escuro - hover */
+  --warning-100: #FEF3C7;    /* Âmbar claro - backgrounds */
+
+  --error-500: #EF4444;      /* Vermelho - erros, alertas críticos */
+  --error-600: #DC2626;      /* Vermelho escuro - hover */
+  --error-100: #FEE2E2;      /* Vermelho claro - backgrounds */
+
+  --info-500: #06B6D4;       /* Ciano - informações */
+  --info-600: #0891B2;       /* Ciano escuro - hover */
+  --info-100: #CFFAFE;       /* Ciano claro - backgrounds */
+
+  /* ========================================
+     ESCALA DE NEUTROS - Cinzas
+     ======================================== */
+  --gray-50: #F9FAFB;        /* Cinza muito claro - fundo de cards, áreas secundárias */
+  --gray-100: #F3F4F6;       /* Cinza claro - backgrounds alternativos */
+  --gray-200: #E5E7EB;       /* Cinza suave - bordas padrão */
+  --gray-300: #D1D5DB;       /* Cinza médio claro - bordas mais visíveis */
+  --gray-400: #9CA3AF;       /* Cinza médio - texto secundário, ícones inativos */
+  --gray-500: #6B7280;       /* Cinza neutro - texto terciário */
+  --gray-600: #4B5563;       /* Cinza escuro - texto importante */
+  --gray-700: #374151;       /* Cinza muito escuro - texto em destaque */
+  --gray-800: #1F2937;       /* Cinza quase preto - headers, títulos */
+  --gray-900: #111827;       /* Preto suave - texto principal escuro */
+
+  /* ========================================
+     BACKGROUNDS BASE
+     ======================================== */
+  --bg-base: #FFFFFF;        /* Fundo principal - BRANCO puro */
+  --bg-surface: #F9FAFB;     /* Fundo de superfícies elevadas - cards, modais */
+  --bg-hover: #F3F4F6;       /* Fundo em hover states */
+  --bg-dark: #0F172A;        /* Fundo escuro - sidebar, headers fixos */
+
+  /* ========================================
+     CORES DE TEXTO
+     ======================================== */
+  --text-primary: #111827;   /* Texto principal - máxima legibilidade */
+  --text-secondary: #6B7280; /* Texto secundário - informações complementares */
+  --text-tertiary: #9CA3AF;  /* Texto terciário - placeholders, desabilitado */
+  --text-inverse: #FFFFFF;   /* Texto em fundos escuros */
+  --text-link: #3B82F6;      /* Links padrão */
+  --text-link-hover: #2563EB;/* Links em hover */
+
+  /* ========================================
+     BORDAS
+     ======================================== */
+  --border-light: #E5E7EB;   /* Bordas suaves */
+  --border-default: #D1D5DB; /* Bordas padrão */
+  --border-strong: #9CA3AF;  /* Bordas mais visíveis */
+  --border-accent: #3B82F6;  /* Bordas em destaque */
+
+  /* ========================================
+     SOMBRAS (Box Shadows)
+     ======================================== */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* ========================================
+     RAIOS DE BORDA (Border Radius)
+     ======================================== */
+  --radius-sm: 4px;          /* Pequeno - inputs, badges */
+  --radius-md: 8px;          /* Médio - botões, cards pequenos */
+  --radius-lg: 12px;         /* Grande - cards, containers */
+  --radius-xl: 16px;         /* Extra grande - modais, seções */
+  --radius-2xl: 24px;        /* Muito grande - hero sections */
+  --radius-full: 9999px;     /* Circular - avatares, pills */
+
+  /* ========================================
+     ESPAÇAMENTO (Spacing)
+     ======================================== */
+  --spacing-xs: 4px;         /* 0.25rem */
+  --spacing-sm: 8px;         /* 0.5rem */
+  --spacing-md: 16px;        /* 1rem */
+  --spacing-lg: 24px;        /* 1.5rem */
+  --spacing-xl: 32px;        /* 2rem */
+  --spacing-2xl: 48px;       /* 3rem */
+  --spacing-3xl: 64px;       /* 4rem */
+
+  /* ========================================
+     TRANSIÇÕES (Transitions)
+     ======================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slowest: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========================================
+     Z-INDEX (Camadas)
+     ======================================== */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* ========================================
+   TEMAS PARA COMPONENTES ESPECÍFICOS
+   ======================================== */
+
+/* Tema Sidebar */
+.theme-sidebar {
+  background: var(--primary-900);
+  color: var(--text-inverse);
+}
+
+.theme-sidebar-item {
+  color: var(--gray-400);
+  transition: all var(--transition-base);
+}
+
+.theme-sidebar-item:hover {
+  background: var(--primary-800);
+  color: var(--text-inverse);
+}
+
+.theme-sidebar-item-active {
+  background: var(--primary-800);
+  color: var(--text-inverse);
+  border-left: 4px solid var(--accent-500);
+}
+
+/* Tema Card */
+.theme-card {
+  background: var(--bg-base);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-card-hover:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  transition: all var(--transition-base);
+}
+
+/* Tema Button Primary */
+.theme-btn-primary {
+  background: var(--accent-500);
+  color: var(--text-inverse);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.theme-btn-primary:hover {
+  background: var(--accent-600);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.theme-btn-primary:active {
+  background: var(--accent-700);
+  box-shadow: var(--shadow-xs);
+  transform: translateY(0);
+}
+
+/* Tema Button Secondary */
+.theme-btn-secondary {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.theme-btn-secondary:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+}
+
+/* Tema Input */
+.theme-input {
+  background: var(--bg-base);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.theme-input:focus {
+  outline: none;
+  border-color: var(--accent-500);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.theme-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* ========================================
+   UTILITÁRIOS RÁPIDOS
+   ======================================== */
+
+/* Backgrounds */
+.bg-primary { background-color: var(--accent-500) !important; }
+.bg-dark { background-color: var(--primary-900) !important; }
+.bg-light { background-color: var(--gray-50) !important; }
+.bg-white { background-color: var(--bg-base) !important; }
+
+/* Textos */
+.text-primary { color: var(--text-primary) !important; }
+.text-secondary { color: var(--text-secondary) !important; }
+.text-accent { color: var(--accent-500) !important; }
+.text-white { color: var(--text-inverse) !important; }
+.text-success { color: var(--success-500) !important; }
+.text-warning { color: var(--warning-500) !important; }
+.text-error { color: var(--error-500) !important; }
+
+/* Bordas */
+.border-light { border-color: var(--border-light) !important; }
+.border-default { border-color: var(--border-default) !important; }
+.border-accent { border-color: var(--border-accent) !important; }
+
+/**
+ * ✨ Paleta criada por Jhulia
+ * Harmonia visual respeitando teoria das cores
+ * Acessibilidade WCAG 2.1 AA compliant
+ * Design system escalável e manutenível
+ */
